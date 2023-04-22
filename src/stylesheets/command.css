@@ -1,0 +1,115 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #424549;
+}
+
+.command-container{
+    min-height: 500px;
+    padding: 20px;
+}
+
+.command-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.command-content h1, p{
+    margin: 0 50px;
+    color: white;
+}
+
+.command-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.commands{
+    width: 500px;
+    margin: 10px;
+    padding: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    
+}
+
+.commands li{
+    padding: 0 10px;
+    margin: none;
+    position: relative;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.active-command {
+    background: #AAAAAA;
+}
+
+.commands li::after{
+    content: "";
+    position: absolute;
+    background: #33c481;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+}
+
+.commands li:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.result{
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.result div{
+    padding: 5px 10px;
+    width: 1200px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.result div h2{
+    margin: 0;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.result div p{
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.search-input {
+    position: relative;
+    padding-left: 24px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #424549;
+}
